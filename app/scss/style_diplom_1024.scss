@@ -28,8 +28,8 @@
   }
 
   .header__tel-number {
-    margin-left: 38%;
-    padding-top: 14px;  
+    margin-left: 30%;
+    padding-top: 5px;  
   }
   .header__tel-namber {      
     font-family: "Roboto-Bold";
@@ -55,10 +55,10 @@
 }
 @media (max-width: 1300px) {
   .name-container {
-    background-image: url("../img/fon-tablet.png");
-    background-position: right;
+    background-image: url("../img/fon-tablet.png");    
     background-repeat: no-repeat;
-    max-width: 1024px;
+    padding-left: 0;
+
   }
 
   .name-container h1 {
@@ -77,6 +77,38 @@
     font-size: 18px;
     font-family: "Roboto-Medium";
   }
+ 
+  .name-container__icon-flying1 { 
+  left: 6.5%1;
+  top: 62px;  
+}
+
+.name-container__icon-flying2 {  
+  left: 40.3%;
+  top: 85px;  
+}
+
+.name-container__icon-flying3 {    
+  right: 4.3%;
+  top: 5px;  
+}
+
+.name-container__icon-flying4 {  
+  left: 81%;
+  bottom: 100px;
+  z-index: 10;
+  
+  }  
+
+.name-container__icon-flying5 {    
+  left: 24.5%;
+  bottom: 84px;  
+}
+
+.name-container__icon-flying6 {    
+  left: 6.8%;
+  top: 590px;   
+}
 }
 @media (max-width: 1300px) {
   .do-container {
@@ -147,6 +179,10 @@
     display: none;
   }
 
+  .swiper-wrapper {
+  margin-bottom: 30px;
+}
+
   .my-work__button {
     font-size: 18px;
     width: 320px;
@@ -166,29 +202,41 @@
     justify-content: flex-start;
   }
 
+  .gradient__icon-flying2, .gradient__icon-flying5 {
+    display: none;
+  }
+
   .gradient__h3-h6 {
     justify-content: center;
     width: 945px;
+    max-width: 945px;
+    max-height: 945px;
     margin-left: 40px;
     margin-right: 20px;
-    align-items: flex-start;
+    align-items: flex-start;    
   }
 
   .gradient h3 {
     font-size: 45px;
-    padding: 0;
-    margin: 0 auto;
-    line-height: 1.5;
-    margin-bottom: 40px;
+    padding: 0;    
+    line-height: 1.5;   
     font-family: "Roboto-Bold";
+    line-height: 40px;
   }
 
   .gradient h6 {
     font-size: 18px;
-    padding: 0;
-    margin: 0 auto;
+    padding: 0;    
     line-height: 1.5;
   }
+
+  .gradient__icon-flying1 {  
+  top: 10px;
+  }
+  .gradient__icon-flying1, .gradient__icon-flying3, .gradient__icon-flying4 { 
+transform: scale(0.7);
+  }
+
 
   .footer {
     display: flex;
