@@ -79,15 +79,15 @@ function swiper25() {
       breakpoints: {
       1300: {
       slidesPerView: 2,
-      spaceBetween: 35
+      spaceBetween: 45,
     },
     720: {
       slidesPerView: 1,
-      spaceBetween: 50
+      spaceBetween: 50,
     },
     480: {
       slidesPerView: 1,
-      spaceBetween: 50
+      spaceBetween: 50,
     }},
  
   

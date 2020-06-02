@@ -50,12 +50,11 @@ html, body {
 }
 
 button {
-  transition:0.5s ease;
+  transition:0.5s ease 0.2s;
 }
 
 button:hover {
   cursor: pointer;  
-  text-transform: uppercase;
   transform: scale(1.1);  
 }
 
@@ -75,7 +74,7 @@ button:hover {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
-  position: relative; 
+  position: relative;   
 }
 
 .flex-container {
@@ -124,7 +123,7 @@ button:hover {
 .header__list a {
   text-decoration: none;
   color: black;
-  transition: 0.2s;
+  transition: 0.2s ease 0.2s;
 }
 
 .header__tel-number {
@@ -133,7 +132,7 @@ button:hover {
   a {
     color: black;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.2s ease 0.2s;
     &:hover {
       color: #fc557c;
       border-bottom: 1px solid #fc557c;
@@ -174,7 +173,7 @@ button:hover {
   max-width: 1585px;
   height: 680px;
   margin-left: auto;  
-  padding-left: 40px;  
+  padding-left: 40px;   
 }
 
 .name-container__icon-flying1 {
@@ -368,6 +367,7 @@ button:hover {
 .do-container h2 {
   font-size: 54px;
   text-align: center;
+  font-family: "Roboto-Bold";
 }
 
 .do-container__icon {
@@ -397,7 +397,7 @@ button:hover {
   margin-right: 30px;
 }
 
-.do-container__icon_adapt {
+.do-container__icon_adapt {  
   width: 260px;
   height: 150px;
   /*background-image: url('img/icon-adapt.png');*/
@@ -467,6 +467,7 @@ button:hover {
   padding-top: 30px;
   margin-bottom: 110px;
   text-align: center;
+  font-family: "Roboto-Black";
 }
 
 .my-work h6 {
@@ -597,16 +598,13 @@ button:hover {
   font-size: 18px;
 }
 
-.gradient {
+.gradient {  
   position: relative;
-  width: 1920px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;  
   display: flex;
-  height: 365px;
-  background: -webkit-gradient(linear, left bottom, right top, from(#ff8f5a), to(#ff2f96));
-  background: -o-linear-gradient(left bottom, #ff8f5a, #ff2f96);
+  height: 365px;  
   background: linear-gradient(to right top, #ff8f5a, #ff2f96);
+  background-size: 100%;
 }
 
 .gradient__icon-flying {
@@ -621,10 +619,11 @@ button:hover {
   width: 920px;  
   display: flex;  
   flex-direction: column;  
-  justify-content: center;  
+  justify-content: center;    
 }
  
 .gradient h3 {
+  font-family: "Roboto-Bold";
   font-size: 45px;
   color: white;  
   max-width: 920px;
@@ -712,76 +711,58 @@ button:hover {
 // }
 
 .gradient__icon-flying1, .gradient__icon-flying5, .gradient__icon-flying6 {
-  -webkit-animation-name: gradient__icon-flying;
-  animation-name: gradient__icon-flying;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+   animation-name: gradient__icon-flying;
+   animation-duration: 3s;
+   animation-direction: alternate;
 }
 
 .gradient__icon-flying2, .gradient__icon-flying3, .gradient__icon-flying4 {
-  -webkit-animation-name: gradient__icon-flying_right;
   animation-name: gradient__icon-flying_right;
-  -webkit-animation-duration: 3s;
   animation-duration: 3s;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 
 @-webkit-keyframes gradient__icon-flying {
   from {
     opacity: 0;
-    -webkit-animation-delay: 5s;
     animation-delay: 5s;
-    -webkit-transform: translate(1000px, 0px) scale(4) rotate(-180deg);
     transform: translate(1000px, 0px) scale(4) rotate(-180deg);
   }
   to {
     opacity: 1;
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes gradient__icon-flying {
   from {
     opacity: 0;
-    -webkit-animation-delay: 5s;
     animation-delay: 5s;
-    -webkit-transform: translate(1000px, 0px) scale(4) rotate(-180deg);
     transform: translate(1000px, 0px) scale(4) rotate(-180deg);
   }
   to {
     opacity: 1;
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @-webkit-keyframes gradient__icon-flying_right {
   from {
     opacity: 0;
-    -webkit-animation-delay: 5s;
     animation-delay: 5s;
-    -webkit-transform: translate(-1000px, 0px) scale(4) rotate(180deg);
     transform: translate(-1000px, 0px) scale(4) rotate(180deg);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px, 0px) rotate(360deg);
     transform: translate(0px, 0px) rotate(360deg);
   }
 }
 @keyframes gradient__icon-flying_right {
   from {
     opacity: 0;
-    -webkit-animation-delay: 5s;
     animation-delay: 5s;
-    -webkit-transform: translate(-1000px, 0px) scale(4) rotate(180deg);
     transform: translate(-1000px, 0px) scale(4) rotate(180deg);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px, 0px) rotate(360deg);
     transform: translate(0px, 0px) rotate(360deg);
   }
 }
@@ -790,12 +771,8 @@ button:hover {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 20%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -815,7 +792,7 @@ button:hover {
   font-size: 18px;
   color: #8993ad;
   margin-bottom: 20px;
-  transition: 0.2s;
+  transition: 0.2s ease 0.2s;
 }
 
 .footer__ul_work li a:hover {  
@@ -845,7 +822,7 @@ button:hover {
   font-size: 25px;
   color: black;
   font-family: "Roboto-Medium";
-  transition: 0.2s;
+  transition: 0.2s ease 0.2s;
   &:hover{
     color:#fc557c;
     border-bottom: 1px solid #fc557c;
@@ -896,7 +873,7 @@ button:hover {
   width: 40px;
   height: 29px;
   opacity: 0.5;
-  transition:0.5s;
+  transition:0.5s ease 0.2s;
 }
 
 .footer__socLink:hover {
