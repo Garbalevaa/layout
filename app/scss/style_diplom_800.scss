@@ -1,4 +1,12 @@
 @media (max-width: 950px) {
+  .name-container h1{
+    width: 300px;    
+  }
+
+  .name-container h5{
+    width: 300px;   
+  }
+
   .gradient__h3-h6 {
     width: 750px;
 }
@@ -18,14 +26,6 @@
     margin-left: 10%;     
   }
 
-  .name-container h1{
-    width: 300px;    
-  }
-
-  .name-container h5{
-    width: 300px;
-   
-  }
     .gradient__h3-h6 {
     width: 600px;
   }

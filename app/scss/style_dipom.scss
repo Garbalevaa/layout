@@ -493,7 +493,7 @@ button:hover {
   background-position: top center;
 }
 
-.my-work__img-container_arrow-left {
+.my-work__img-container_arrow-right {
   position: absolute;
   left: 10px;
   top: 310px;
@@ -541,7 +541,7 @@ button:hover {
   background-position: top center;
 }
 
-.my-work__img-container_arrow-right {
+.my-work__img-container_arrow-left {
   position: absolute;
   right: 10px;
   top: 310px;
@@ -616,10 +616,11 @@ button:hover {
 .gradient__h3-h6 {
   position: relative;
   margin-right: 50px;
+  margin-left: 20px;
   width: 920px;  
   display: flex;  
   flex-direction: column;  
-  justify-content: center;    
+  justify-content: center;     
 }
  
 .gradient h3 {

@@ -7,18 +7,17 @@
   position: relative;
 }
 .popup-container__menu {
-  position: fixed;
-  font-family: icofont;
+  position: fixed;    
   width: 100%;
   height: 100%;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4/PnzQwAJcQO7MDYKDQAAAABJRU5ErkJggg==");
-  z-index: 10;
+  z-index: 100;
   display: none;
 }
 
 .popup-container__ball {
-  position: fixed;
-  font-family: icofont;
+  position: fixed; 
+  font-family: "Roboto-Regular"; 
   font-size: 30px;
   width: 100%;
   height: 100%;
@@ -49,29 +48,22 @@
   border-bottom: 1px solid #d7d7d7;
 }
 
-#popup__menu ul a {
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
+#popup__menu ul a {  
   color: black;
   font-size: 18px;
 }
 
-#popup__menu ul a:hover {
-  -webkit-text-decoration-line: underline;
+#popup__menu ul a:hover {  
   text-decoration-line: underline;
   color: red;
   font-size: 22px;
 }
 
-#popup__menu-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#popup__menu-menu {  
   display: flex;
   height: 50px;
   padding-left: 10px;
-  background-color: white;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  background-color: white;  
   justify-content: space-between;
 }
 
@@ -88,11 +80,15 @@
 
 .popup__menu-tel {
   margin-top: 12px;
-  margin-left: 10px;  
+  margin-left: 5px;    
 }
 
 .popup__menu-tel h6{
-  font-size: 18px;  
+  font-size: 18px; 
+  font-family: "Roboto-Regular";
+  margin: 0;
+  padding: 0;
+
 }
 
 #popup__button_ball {
@@ -100,23 +96,19 @@
   margin: 50px auto;
 }
 
-.col__style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+.col__style {  
+  display: flex;  
   justify-content: center;
 }
 
-.button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+.button-container {  
+  display: flex;  
   justify-content: center;
   margin-top: 50px;
+}
+
+.btn-cancel {
+  margin-right: 20px;
 }
 
 .popup__main-container_button[class*='col'] {
@@ -164,6 +156,7 @@
 
 .popup {
   background-color: #fff;
+  font-family: "Roboto-Regular";
   width: 900px;
   height: 900px;
   padding: 20px;

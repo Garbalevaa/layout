@@ -15,7 +15,7 @@ $('.name-container__button, .my-work__button, .do-container__button').magnificPo
         $('.popup-container__menu').fadeIn(400); 
         $('#popup__menu').animate({
             width: '50%',
-            height: '30%'
+            height: '250px'
         }, 400);
 
      })

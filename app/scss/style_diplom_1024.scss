@@ -233,14 +233,14 @@ transform: scale(0.7);
 
 
   .footer {
-    display: flex;
-    margin: 0 40px;
-    max-width: 945px;
-    justify-content: space-between;
+    // display: flex;
+    margin: 0 auto;    
+    max-width: 945px;   
   }
 
   .footer__ul_work {
     font-size: 18px;
+    margin-left: 20px;
   }
 
   .footer__ul_contact {
@@ -249,7 +249,7 @@ transform: scale(0.7);
   }
 
   .footer__ul_soclink {
-    margin-right: 0;
+    margin-right: 20px;
   }
 
   .footer__button {
