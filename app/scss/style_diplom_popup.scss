@@ -7,7 +7,8 @@
   position: relative;
 }
 .popup-container__menu {
-  position: fixed;    
+  position: fixed; 
+  top: 0;   
   width: 100%;
   height: 100%;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4/PnzQwAJcQO7MDYKDQAAAABJRU5ErkJggg==");
@@ -17,12 +18,14 @@
 
 .popup-container__ball {
   position: fixed; 
+  top: 0;
   font-family: "Roboto-Regular"; 
   font-size: 30px;
   width: 100%;
   height: 100%;
   background-color: gray;
-  z-index: 10;
+
+  z-index: 100;
   display: none;
 }
 
@@ -35,6 +38,7 @@
   margin: 50px auto;
   width: 350px;
   height: 300px;
+
 }
 
 #popup__menu ul {
@@ -94,6 +98,7 @@
 #popup__button_ball {
   background-color: #e1e1e1;
   margin: 50px auto;
+  z-index: 10;
 }
 
 .col__style {  

@@ -1,4 +1,6 @@
 $(function(){
+
+  // Функция вызова открывающегося мению при на узнать больше и узнать стоимость
 $('.name-container__button, .my-work__button, .do-container__button').magnificPopup({
   items: {
       src: '#popup',
@@ -6,6 +8,33 @@ $('.name-container__button, .my-work__button, .do-container__button').magnificPo
   }
 });
 
+// Функция плавного перехода по ссылкам к якорям из меню и футера
+
+ $(document).ready(function(){
+    $(".header__list, .footer__ul_work").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+// Функция плавного перехода по ссылкам к якорям из выпадающего
+
+ $('.popup__menu_a a').click(function () {
+     $('.popup-container__menu').fadeOut(400); 
+            $('#popup__menu').animate({
+                width: '0',
+                height: '0'
+            }, 400);  
+
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+        $('body').css('overflow', 'auto'); // А тут его возвращаем в auto
+
+    });
 
 //Функция вызова открывающегося меню при режимах 1024 и 320
 
@@ -20,6 +49,8 @@ $('.name-container__button, .my-work__button, .do-container__button').magnificPo
 
      })
 //Фунция закрытия всплывающегося меню при нажании на кнопку "удалить"
+
+$
     $('.popup__menu-delete').click(function () {
         
             $('body').css('overflow', 'auto'); // А тут его возвращаем в auto
@@ -30,7 +61,9 @@ $('.name-container__button, .my-work__button, .do-container__button').magnificPo
                 height: '0'
             }, 400);
         
-    });
+    }); 
+
+  
 
 //Функция вызова открывающегося меню при нажатии на кнопку "заказ звонка" планшетной и десктопной версии
 
