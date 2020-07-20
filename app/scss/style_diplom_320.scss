@@ -99,7 +99,7 @@
     font-family: "Roboto-Black";
   }
 
-  .name-container__320 h5 {
+  .name-container__320 h2 {
     font-size: 16px;
     margin-top: 20px;
     max-width: 220px;
@@ -267,7 +267,7 @@
     font-family: "Roboto-Black";
   }
 
-  .do-container h6 {
+  .do-container h3 {
     font-size: 16px;
   }
 
@@ -278,12 +278,15 @@
     font-family: "Roboto-Regular";
   }
 
+  .my_work__block{
+    max-width: 300px;        
+  }
 
-  .my-work {
-    width: 480px;
+
+  .my-work {    
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
   }
 
   .my-work__img-container_img1, .my-work__img-container_img2, .my-work__img-container_img3 {
@@ -293,7 +296,7 @@
     background-size: 100%;    
   }
 
-  .my-work h6 {
+  .my-work h3 {
     font-size: 18px;    
   }
 

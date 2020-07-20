@@ -7,15 +7,14 @@
   justify-content: space-between;
 }
 
-.nav-list {
-  outline-style: none;
-  min-width: 50px;
-  height: 40px;
+.nav-list {  
+  min-width: 50px;  
   background-color: white;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAgCAYAAACGhPFEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE4MjgyQjQ1ODVBQjExRUE5OTg5QzBCNTRDQzhENEM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE4MjgyQjQ2ODVBQjExRUE5OTg5QzBCNTRDQzhENEM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTgyODJCNDM4NUFCMTFFQTk5ODlDMEI1NENDOEQ0QzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTgyODJCNDQ4NUFCMTFFQTk5ODlDMEI1NENDOEQ0QzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz58xDn5AAABYUlEQVR42syXQVLDMAxFZfCxuAB36L6LdscMXIAZ6KLcgtv0SsknFLtRHBmnSuJIm3qS1n1PdhzJ4ekLBOrC0fVzMHZ0DX6NwnU+pmQs3VswPD22AQIMCAESDBgMCkwCvYQL48gKWkWCQcdJYV5CgCbzEhOg7Un8Qp/6B4vBGZZwiH+Wi+ePOyWE02XO6XQ5CpkuBd8+m6wEKaB9sudB9SVmZVqCWFtCn+k42QSopSX0mc6B1JBQZbrJA9aSSMJh/4LxxErAShJ+uGdzE9uS6N6ITbiZ+aFBCS+ew8Yl+oKpaGhH4q9gIs0ybSdRLpheD9tKfL8rXy5brsRiBVNNCd1rHH31lYNbU0IF/dDmS8gaErMKJpIAKkjMq6elQr2ChFgwnXefYgc8qYf7r+8TvrPQSvhuz77dOmBQ0gknfduohyu1TOushA/5DnlnoIYlfGbTmJYoP4gGJaZBG5P4EWAAPrrkwkNKPMwAAAAASUVORK5CYII=");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
 }
 
 @media (max-width: 1300px) {
@@ -56,7 +55,7 @@
 @media (max-width: 1300px) {
   .name-container {
     background-image: url("../img/fon-tablet.png");    
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     padding-left: 0;
 
   }
@@ -66,7 +65,7 @@
     margin-left: 40px;
   }
 
-  .name-container h5 {
+  .name-container h2 {
     margin-left: 40px;
   }
 
@@ -129,7 +128,7 @@
     max-width: 800px;
   }
 
-  .do-container__icon h6 {
+  .do-container__icon h3 {
     font-size: 20px;
     color: #8993ad;
     padding-top: 100px;
@@ -152,8 +151,11 @@
   }
 }
 @media (max-width: 1300px) {
+  .my_work__block{
+    width: 820px;
+    }
   .my-work {
-    width: 945px;
+    
     margin-top: 0;    
   }
 
@@ -188,16 +190,6 @@
     width: 320px;
     height: 70px;
   }
-
-  .my-work h6 {
-    font-size: 20px;
-    color: #8993ad;
-    padding-top: 0;
-    text-align: center;
-    align-self: flex-end;
-  }
-
-
 
   .gradient__icon-flying2, .gradient__icon-flying5 {
     display: none;
